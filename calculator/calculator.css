@@ -1,13 +1,17 @@
+.body {
+  background-image: url("http://www.orangehead.net/wp-content/uploads/2018/03/chill.jpg");
+}
 .calc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #8b3d78;
+  /* background-color: black; */
   height: 600px;
   width: 450px;
   margin: 5pc 10pc 10pc 15pc;
   padding: 2pc 1pc 1pc 1pc;
 }
+
 .calc-button-row {
   display: flex;
   margin: 0pc 0pc 1pc 0pc;
@@ -16,17 +20,20 @@
 }
 
 .calc-button {
-  background-color: #e691c7;
+  background-color: #d8d9db;
   padding: 2pc 2pc 2pc 2pc;
-  /* text-align: inherit; */
-  /* background-color: #d8d9db; */
+
   font-size: 20px;
   width: 24.5%;
   border: none;
 }
 
+.calc-button:hover {
+  background-color: palevioletred;
+}
+
 .calc-button:active {
-  background-color: #f6e2f5;
+  background-color: #121f3b;
 }
 
 .double {
@@ -35,10 +42,23 @@
 
 .triple {
   width: 74.8%;
-} 
+}
+
+.calc-button:last-child {
+  background-color: rgb(128, 152, 233);
+  color: white;
+}
+
+.calc-button:last-child:hover {
+  background-color: rgb(96, 122, 209);
+}
+
+.calc-button:last-child:active {
+  background-color: rgb(30, 78, 236);
+}
 
 .screen {
-  background-color: #550445;
+  background-color: palevioletred;
   border: none;
   color: white;
   padding: 2pc;
