@@ -6,34 +6,32 @@
   height: 600px;
   width: 450px;
   margin: 5pc 10pc 10pc 15pc;
-  /* padding: 2pc 1pc 1pc 1pc; */
+  padding: 2pc 1pc 1pc 1pc;
 }
 .calc-button-row {
   display: flex;
   margin: 0pc 0pc 1pc 0pc;
-  flex-direction: row;
-  justify-content: space-evenly;
+  padding: 1pc -1pc 1pc -1pc;
+  justify-content: space-between;
 }
 
 .calc-button {
   width: 10pc 1pc 1pc 1pc;
   background-color: turquoise;
   padding: 2pc 2pc 2pc 2pc;
-  text-align: inherit;
+  /* text-align: inherit; */
   font-size: 20px;
-  
 }
 
 .triple {
-  width: 18pc;
+  width: 20.5pc;
 }
 
 .double {
-  width: 12pc;
+  width: 13pc;
 }
 
 .screen {
-
   background-color: palevioletred;
   border: none;
   color: white;
