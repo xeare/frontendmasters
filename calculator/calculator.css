@@ -9,7 +9,8 @@
   height: 600px;
   width: 450px;
   margin: 5pc 10pc 10pc 15pc;
-  padding: 2pc 1pc 1pc 1pc;
+  padding: 2pc 1pc 1pc 1pc; //for half screen
+  padding: 5% 25% 25% 25%; // for full screen
 }
 
 .calc-button-row {
