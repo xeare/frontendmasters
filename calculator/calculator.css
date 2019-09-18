@@ -1,0 +1,44 @@
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  height: 600px;
+  width: 450px;
+  margin: 5pc 10pc 10pc 15pc;
+  /* padding: 2pc 1pc 1pc 1pc; */
+}
+.calc-button-row {
+  display: flex;
+  margin: 0pc 0pc 1pc 0pc;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.calc-button {
+  width: 10pc 1pc 1pc 1pc;
+  background-color: turquoise;
+  padding: 2pc 2pc 2pc 2pc;
+  text-align: inherit;
+  font-size: 20px;
+  
+}
+
+.triple {
+  width: 18pc;
+}
+
+.double {
+  width: 12pc;
+}
+
+.screen {
+
+  background-color: palevioletred;
+  border: none;
+  color: white;
+  padding: 2pc;
+  margin: 0pc 0pc 1pc 0pc;
+  text-align: inherit;
+  font-size: 20px;
+}

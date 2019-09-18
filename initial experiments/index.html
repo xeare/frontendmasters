@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript Experiments</title>
+  </head>
+
+  <body>
+    <style>
+      .color-box {
+        width: 100px;
+        height: 100px;
+        background-color: turquoise;
+      }
+
+      .event-button {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(61, 97, 133);
+      }
+      .red-square {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 30, 116);
+      }
+      .event-button {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(30, 240, 255);
+      }
+      .input-to-copy {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(30, 255, 143);
+      }
+      .button-container {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 150, 30);
+      }
+    </style>
+    <h1>Javascript Experiments!</h1>
+    <hr />
+    <button class="event-button">LUL CLICK IF YOU DARE LUL</button>
+    <div class="red-square"></div>
+    <br />
+
+    <input placeholder="type AHOY" class="input-to-copy" />
+    <p class="p-to-copy-to">You gon type any time soon son?</p>
+
+    <div class="color-box"></div>
+    <input class="color-input" placeholder="color input. #123" />
+
+    <div class="button-container">
+      <button>1</button>
+      <button>12</button>
+      <button>123</button>
+      <button>1234</button>
+      <button>12345</button>
+    </div>
+    <!-- <script src="./experiments.js"></script>  -->
+    <script>
+      daysOfTheWeek.forEach(days => {
+        // console.error(days.bold())
+      });
+
+      const button = document.querySelector(".event-button");
+      button.addEventListener("click", function() {
+        alert("eyyyyyyyy LMAO");
+      });
+
+      const input = document.querySelector(".input-to-copy");
+      const paragraph = document.querySelector(".p-to-copy-to");
+
+      input.addEventListener("keyup", function() {
+        paragraph.innerText = input.value;
+      });
+
+      const input = document.querySelector(".color-input");
+      const paragraph = document.querySelector(".color-box");
+
+      input.addEventListener("change", function() {
+        paragraph.style.backgroundColor = input.value;
+      });
+
+      document
+        .querySelector(".button-container")
+        .addEventListener("click", function(event) {
+          alert(`you clicked on button ${event.target.innerText}`);
+        });
+    </script>
+  </body>
+</html>
